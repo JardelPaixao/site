@@ -18,18 +18,20 @@
             </ul>
         </nav>
 
-    </header> 
+    </header>
     <section id="sobre"> <!--Iniciamos uma seção, é onde fica um grupo de informações que compõem o site-->
         <h2>Sobre mim</h2> <!--Titulo da seção, mantemos em h2 para ter um tamanho médio-->
-        <img src="C:\sctec\front-end\Foto Desenho.avif" alt="Foto de perfil" width="400" reidth="600" 
-            title="Imagem de perfil Jardel"><!--O img é utilizado para buscar um arquivo de imagme, nas aspas
+        <img src="C:\Users\Jardel\Documents\GitHub\site\Foto Desenho.avif" alt="Foto de perfil" width="400" reidth="600"
+            title="Imagem de perfil Jardel"><!--O img é utilizado para buscar um arquivo de imagem, nas aspas
             do src(source) você vai adicionar o caminho, pode ser na web ou no seu pc, o "alt" serve para 
             dar uma mensagem caso a imagem não carregue, o width é a largura da imagem e reidth é a altura
             utiliza-se o title para aparecer uma pequena mensagem ao passar com o mouse em cima da imagem.-->
-        <article> <!--O article é um tipo de seção, porém o seu conteúdo é inteiro autosuficiente, não um compondente da pagina necessáriamente-->
-            <p>Olá, me chamo Jardel, estou criando meu primeiro site. Adicionando mais um texto de teste</p>
+        <article>
+            <!--O article é um tipo de seção, porém o seu conteúdo é inteiro autosuficiente, não um compondente da pagina necessáriamente-->
+            <p>Olá, me chamo Jardel, estou criando meu primeiro site.</p>
         </article>
-        <aside> <!-- o aside é um conteúdo complementar, uma lista de habilidades, barra lateral com links relacionados ou curiosidades extra num artigo-->
+        <aside>
+            <!-- o aside é um conteúdo complementar, uma lista de habilidades, barra lateral com links relacionados ou curiosidades extra num artigo-->
             <h3>Habilidades</h3>
             <ul>
                 <li>HTML</li>
@@ -48,22 +50,45 @@
         </article>
 
     </section>
-    
-    <section>
-        <footer> <!-- O Footer serve para adicionar informações ao rodapé, todo conteúdo aqui ficará na parte inferior da página-->
-            <p>Direitos reservados a Jardel.</p>
 
-            <section id="contato"> <!-- Mais uma vez utilizando um parametro que voi direcionado pelo a href=""-->
-                <h2>Contato</h2>
-                <p>Tem um projeto em mente? entre em contato</p>
-                <address><!--Esse aqui é um elemento semântico para informações de contato-->
-                    E-mail: <a href="mailto:jardel1920@hotmail.com">jardel1920@hotmail.com</a> <br> <!--Usamos o <br> para pular uma linha-->
-                    Telefone: <a href="tel:+5547999690313">47-99969-03-13</a>
-                </address>
+    <footer>
+        <!-- O Footer serve para adicionar informações ao rodapé, todo conteúdo aqui ficará na parte inferior da página-->
+        <p>Direitos reservados a Jardel.</p>
 
-            </section>
-        </footer>
-    </section>
+        <section id="contato"> <!-- Mais uma vez utilizando um parametro que voi direcionado pelo a href=""-->
+            <h2>Contato</h2>
+            <p>Tem um projeto em mente? entre em contato</p>
+            <address><!--Esse aqui é um elemento semântico para informações de contato-->
+                E-mail: <a href="mailto:jardel1920@hotmail.com">jardel1920@hotmail.com</a> <br>
+                <!--Usamos o <br> para pular uma linha-->
+                Telefone: <a href="tel:+5547999690313">47-99969-03-13</a>
+            </address>
+        </section>
+
+        <form action="">
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome"> <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email"> <br>
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone"> <br>
+
+            <label for="assunto">Assunto: </label>
+            <select name="assunto" id="assunto"> 
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+            </select><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" class="15" rows="5"></textarea>
+
+        </form>
+
+    </footer>
 
 </body>
 
